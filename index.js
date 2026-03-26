@@ -3,6 +3,13 @@ botoes.forEach(botao => {
     botao.addEventListener("click", function () {
         const caixaPai = this.closest('.duvida-box');
         if (this.innerHTML === '+') {
+            botoes.forEach(outroBotao => {
+                const outraCaixa = outroBotao.closest('.duvida-box');
+                if (outraCaixa !== caixaPai) {
+                    outraCaixa.style.maxHeight = '55px'; 
+                    outroBotao.innerHTML = '+';
+                }
+            });
             caixaPai.style.maxHeight = caixaPai.scrollHeight + "px";
             this.innerHTML = '-';
         } else {
