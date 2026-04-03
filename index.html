@@ -17,7 +17,7 @@
             <span></span>
         </button>
         <ul>
-            <li><a href="#QuemSou">QUEM SOU</a></li>
+            <li><a href="#QuemSou" class="active">QUEM SOU</a></li>
             <li><a href="#AbordagensTerapêuticas">ABORDAGENS TERAPÊUTICAS</a></li>
             <li><a href="#Causas">CAUSAS</a></li>
             <li><a href="#Duvidas">DÚVIDAS FREQUENTES</a></li>
@@ -131,10 +131,12 @@
         </div>
     </div>
     <div class="WhatsApp-container">
-        <button class="WhatsApp-btn"><a href="https://wa.me" target="_blank"><img
-                    src="https://store-images.s-microsoft.com/image/apps.8453.13655054093851568.4a371b72-2ce8-4bdb-9d83-be49894d3fa0.7f3687b9-847d-4f86-bb5c-c73259e2b38e"
-                    alt=""></a></button>
-    </div>
+    <a href="https://api.whatsapp.com/send?phone=5543999153629&text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta"
+       target="_blank"
+       class="WhatsApp-btn">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+</div>
     <div id="Duvidas">
         <div class="duvidas-wrapper">
             <div class="duvidas-container">
@@ -189,72 +191,92 @@
         </div>
     </div>
     <div id="Contato">
-        <div class="Contato-container reveal-container">
-            <div class="Contato-container-top">
-                <div class="Contato-container-Left reveal-contato-left">
-                    <h2>Nome da loja</h2>
-                    <span><i class="bi bi-telephone"></i> (43) 99915-3629</span>
-                    <span><i class="bi bi-envelope"></i> 123@gmail.com</span>
-                    <span><i class="bi bi-geo-alt"></i> Rua alguma coisa lá</span>
-                    <span><i class="bi bi-clock"></i> Seg-Sex • 08:00 às 18:00</span>
-                    <span><i class="bi bi-whatsapp"></i> Atendimento também via WhatsApp</span>
+    <div class="Contato-container reveal-container">
+        <div class="Contato-container-top">
+            <div class="Contato-agendamento reveal-contato-left">
+                <div class="online-content">
+                    <span class="tag-agendamento">Comece seu processo hoje</span>
+                    <div class="online-header">
+                        <i class="bi bi-laptop"></i>
+                        <h3>Atendimento 100% Online</h3>
+                    </div>
+                        As sessões são realizadas de forma online, com conforto, sigilo e praticidade,
+                        no horário que melhor se encaixa na sua rotina.
+                    </p>
+                    <div class="online-benefits">
+                    <div class="benefit-item">
+                        <i class="bi bi-shield-check"></i>
+                        <span>Sigilo garantido</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="bi bi-clock"></i>
+                        <span>Horários flexíveis</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="bi bi-house"></i>
+                        <span>Atenda-se de qualquer lugar</span>
+                    </div>
                 </div>
-                <div class="Contato-container-Right reveal-contato-right">
-                    <span>Ou envie uma mensagem por aqui</span>
-                    <form action="" method="post">
-                        <input type="text" placeholder="Nome" required pattern="[A-Za-z]+">
-                        <input type="email" placeholder="Email" required>
-                        <input type="text" placeholder="Assunto" required>
-                        <textarea placeholder="Mensagem" required></textarea>
-                        <input type="submit" id="Contato-submit-btn">
-                    </form>
                 </div>
             </div>
-            <hr>
-            <div class="Contato-container-bottom">
-                <div class="mapa-header">
-                    <span>Localização</span>
-                    <a href="https://maps.google.com" target="_blank">
-                        <i class="bi bi-geo-alt"></i> Abrir no Google Maps
-                    </a>
-                </div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1540.731467112824!2d-50.072435772031305!3d-23.297696397221788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDE3JzUxLjQiUyA1MMKwMDQnMTguNSJX!5e0!3m2!1spt-BR!2sbr!4v1773398343471!5m2!1spt-BR!2sbr"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="Contato-container-right reveal-contato-right">
+    <h2>Nome da loja</h2>
+    <span><i class="bi bi-telephone"></i> (43) 99915-3629</span>
+    <span><i class="bi bi-envelope"></i> 123@gmail.com</span>
+    <span><i class="bi bi-laptop"></i> Atendimento online</span>
+    <span><i class="bi bi-clock"></i> Seg-Sex • 08:00 às 18:00</span>
+    <span><i class="bi bi-whatsapp"></i> Atendimento via WhatsApp</span>
             </div>
         </div>
+         <div class="agendamento-cta">
+      <a href="https://api.whatsapp.com/send?phone=5543999153629&text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta" target="_blank" class="btn-whats">
+        <i class="bi bi-whatsapp"></i> Agendar pelo WhatsApp
+      </a>
     </div>
+        <hr>
+        <div class="Contato-form-bottom reveal-contato-bottom">
+            <span>Ou envie uma mensagem por aqui</span>
+            <form action="" method="post">
+                <input type="text" placeholder="Nome" required pattern="[A-Za-z]+">
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Assunto" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <input type="submit" id="Contato-submit-btn">
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 <footer>
-    <div class="footer-container">
-        <div class="footer-col">
-            <h3>Nome da Loja</h3>
-            <p>
-                Espaço dedicado ao cuidado emocional, oferecendo atendimento psicológico
-                com escuta acolhedora e foco no autoconhecimento.
-            </p>
-        </div>
-        <div class="footer-col">
-            <h4>Navegação</h4>
-            <a href="#QuemSou">Quem sou</a>
-            <a href="#AbordagensTerapêuticas">Abordagens</a>
-            <a href="#Causas">Causas</a>
-            <a href="#Duvidas">Dúvidas</a>
-            <a href="#Contato">Contato</a>
-        </div>
-        <div class="footer-col">
-            <h4>Redes sociais</h4>
-            <div class="footer-social">
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-whatsapp"></i></a>
-                <a href="#"><i class="bi bi-envelope"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© 2026 Nome da Loja • Todos os direitos reservados</p>
-    </div>
+<div class="footer-container">
+<div class="footer-col">
+<h3>Nome da Loja</h3>
+<p>
+Espaço dedicado ao cuidado emocional, oferecendo atendimento psicológico
+com escuta acolhedora e foco no autoconhecimento.
+</p>
+</div>
+<div class="footer-col">
+<h4>Navegação</h4>
+<a href="#QuemSou">Quem sou</a>
+<a href="#AbordagensTerapêuticas">Abordagens</a>
+<a href="#Causas">Causas</a>
+<a href="#Duvidas">Dúvidas</a>
+<a href="#Contato">Contato</a>
+</div>
+<div class="footer-col">
+<h4>Redes sociais</h4>
+<div class="footer-social">
+<a href="https://www.instagram.com/p/DVjtYTKEQhi/?igsh=cWhvN2pnY2xtZW52"><i class="bi bi-instagram"></i></a>
+<a href="https://api.whatsapp.com/send?phone=5543999153629&text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta"target="_blank"><i class="bi bi-whatsapp"></i></a>
+<a href="#"><i class="bi bi-envelope"></i></a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+    <p>© 2026 Nome da Loja. Todos os direitos reservados.</p>
+   <p class="dev-credit">Desenvolvido por<a href="https://github.com/JGNeresSap" target="_blank"><i class="bi bi-github"></i>João Gabriel Gomes</a></p>
+</div>
 </footer>
 </html>
 <script src="index.js"></script>
